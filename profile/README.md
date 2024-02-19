@@ -5,12 +5,13 @@
 <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/Google Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white"/> <img src="https://img.shields.io/badge/Google Cloud Storage-AECBFA?style=flat-square&logo=google-cloud-storage&logoColor=white"/>
 
 ## 🙋‍♂️ 우리 프로젝트를 소개합니다!
-  
+GreenJoy는 환경을 보호하는 것을 목표로 하는 프로젝트입니다. 소셜 네트워크 서비스와 꿀팁 게시판을 통해 사용자는 환경 활동을 공유할 수 있습니다. 또한, 사람들은 목표가 있을 때 행동을 실천하는 경우가 많습니다. 그래서 일상적으로 환경을 보호할 수 있도록 간단한 목표를 제공하는 챌린지 기능을 통해 사람들을 동기 부여 시킵니다.
 
 ## 💻 프로젝트 설치
 * JDK 17이상이 설치되어 있어야 합니다.
+* Node.js가 설치되어 있어야 합니다.
 
-### - Server
+## - Server
 
 ### 1. Git Clone
 ```bash
@@ -41,7 +42,7 @@ spring:
               - email
               - profile
   datasource:
-    url: jdbc:mysql://localhost:3306/{DB Name}
+    url: jdbc:mysql://{Server Address}:3306/{DB Name}
     username: {DB Username}
     password: {DB Password}
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -74,7 +75,7 @@ $ ./gradlew build
 $ java -jar build/libs/{Project Name-Version}.jar
 ```
 
-### - Client
+## - Client
 
 ### 1. Git Clone
 ```bash
