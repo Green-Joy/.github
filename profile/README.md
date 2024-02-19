@@ -17,9 +17,10 @@
 $ https://github.com/Green-Joy/BE.git
 ```
 
-### 2. 구글 소셜 로그인 설정
+### 2. 구글 소셜 로그인 등록, 파이어 베이스와 구글 클라우드 스토리지 키 발급
 * [구글 클라우드 플랫폼](https://console.cloud.google.com/apis/credentials/consent?referrer=search&hl=ko&project=spring-414710)에서 애플리케이션 추가 -> Client Key와 Client Secret Key 발급, Redirect URL 설정
-* 파이어 베이스
+* [파이어 베이스](https://console.firebase.google.com/)에서 .json 형식의 비공개 키 발급 -> "src/main/resources/" 경로에 저장
+* [구글 클라우드 스토리지](https://cloud.google.com/?hl=ko)에서 .json 형식의 비공개 키 발급 -> "src/main/resources/" 경로에 저장
 
 ### 3. src/main/resources/application.yml 설정
 ```java
@@ -58,12 +59,12 @@ spring:
     gcp:
       storage:
         credentials:
-          location: classpath:{Firebase Key File}
-        project-id: {Firebase Project-id}
-        bucket: {Google Cloud Bucket}
+          location: classpath:{Google Cloud Key File}.json
+        project-id: {Google Cloud Project-id}
+        bucket: {Google Cloud Bucket Name}
 
 app:
-  firebase-configuration-file : {Firebase Configuration File}
+  firebase-configuration-file : {Firebase Configuration File}.json
   firebase-bucket: {Google Cloud Bucket URL}
 ```
 
