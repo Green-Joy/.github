@@ -83,9 +83,10 @@ $ https://github.com/Green-Joy/FE.git
 
 ### 2. .env 설정
 ```javascript
-REACT_APP_GOOGLE_CLIENT_ID = {Client Key}
-REACT_APP_GOOGLE_CLIENT_SECRET = {Client Secret Key}
-REACT_APP_GOOGLE_REDIRECT_URI = {Redirect Uri}
+REACT_APP_BANNER_IMAGE1 = {Banner Image1 Src}
+REACT_APP_BANNER_IMAGE2 = {Banner Image2 Src}
+REACT_APP_BANNER_IMAGE3 = {Banner Image3 Src}
+REACT_APP_BANNER_IMAGE4 = {Banner Image4 Src}
 ```
 
 ### 3. 프로젝트 빌드 및 실행
