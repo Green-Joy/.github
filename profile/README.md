@@ -76,6 +76,24 @@ $ java -jar build/libs/{Project Name-Version}.jar
 
 ### - Client
 
+### 1. Git Clone
+```bash
+$ https://github.com/Green-Joy/FE.git
+```
+
+### 2. .env 설정
+```javascript
+REACT_APP_GOOGLE_CLIENT_ID = {Client Key}
+REACT_APP_GOOGLE_CLIENT_SECRET = {Client Secret Key}
+REACT_APP_GOOGLE_REDIRECT_URI = {Redirect Uri}
+```
+
+### 3. 프로젝트 빌드 및 실행
+```bash
+$ npm install
+$ npm start
+```
+
 ## 🪪 라이선스
 &nbsp;This work is licensed under the MIT license.  
 &nbsp;이 작업물은 MIT 라이선스에 따라 라이선스가 부여되어 있습니다.
