@@ -83,6 +83,9 @@ $ https://github.com/Green-Joy/FE.git
 
 ### 2. .env 설정
 ```javascript
+REACT_APP_GOOGLE_CLIENT_ID = {Google Client Id}
+REACT_APP_GOOGLE_REDIRECT_URI = {Google Redirect Uri}
+
 REACT_APP_BANNER_IMAGE1 = {Banner Image1 Src}
 REACT_APP_BANNER_IMAGE2 = {Banner Image2 Src}
 REACT_APP_BANNER_IMAGE3 = {Banner Image3 Src}
